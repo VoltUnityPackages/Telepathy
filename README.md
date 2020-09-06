@@ -1,9 +1,6 @@
 ![Telepathy Logo](https://i.imgur.com/CWfzmVh.png)
 
-[![Build status](https://img.shields.io/appveyor/ci/vis2k73562/telepathy.svg)](https://ci.appveyor.com/project/vis2k73562/telepathy/)
-[![AppVeyor tests branch](https://img.shields.io/appveyor/tests/vis2k73562/telepathy.svg)](https://ci.appveyor.com/project/vis2k73562/telepathy/branch/master/tests)
-[![Discord](https://img.shields.io/discord/343440455738064897.svg)](https://discordapp.com/invite/N9QVxbM)
-[![Codecov](https://codecov.io/gh/vis2k/telepathy/graph/badge.svg)](https://codecov.io/gh/vis2k/telepathy)
+This is **a mirror** of vis2k's [Telepathy](https://github.com/vis2k/Telepathy) library. This version is designed to be installed via the Unity package manager.
 
 Simple, message based, MMO Scale TCP networking in C#. And no magic.
 
@@ -27,6 +24,14 @@ MMORPGs are insanely difficult to make and we created Telepathy so that we would
 # What about...
 * Async Sockets: perform great in regular C# projects, but poorly when used in Unity.
 * UDP vs. TCP: Minecraft and World of Warcraft are two of the biggest multiplayer games of all time and they both use TCP networking. There is a reason for that.
+
+# Installing the package
+
+To install this mirror of Telepathy:
+1. Open up the package manager via Windows -> Package Manager
+2. Click on the little + sign -> Add package from git URL...
+3. Type `https://github.com/VoltUnityPackages/Telepathy.git?path=/src` and add it
+4. Unity will now download and install the package
 
 # Using the Telepathy Server
 ```C#
@@ -222,4 +227,4 @@ Test Results:<br/>
 
 _Note: results will be significantly better on a really powerful server. Tests will follow._
 
-You can run this test yourself by running the provided [LoadTest](LoadTest)
+You can run this test yourself by running the provided [LoadTest](https://github.com/vis2k/Telepathy/tree/master/LoadTest).
